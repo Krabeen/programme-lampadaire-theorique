@@ -1,7 +1,7 @@
 radio.onReceivedNumber(function (receivedNumber) {
-    if (receivedNumber == 2 || receivedNumber == 2) {
+    if (receivedNumber == 1 || receivedNumber == 3) {
         proximité = 1
-        basic.pause(2000)
+        basic.pause(100)
         proximité = 0
     }
 })
@@ -29,7 +29,7 @@ basic.forever(function () {
                 . # # # .
                 . . # . .
                 `)
-            radio.sendNumber(3)
+            radio.sendNumber(2)
         } else {
             if (proximité == 1) {
                 basic.showLeds(`
